@@ -11,7 +11,7 @@ const App = () => {
 
     const fetchQuranAyat = async () => {
       const number = getRandomNumber(1, 6236);
-      const url = `http://api.alquran.cloud/v1/ayah/${number}`;
+      const url = `https://api.alquran.cloud/v1/ayah/${number}`;
       const response = await fetch(url);
       const result = await response.json();
       if (result?.code === 200 && result?.status === "OK") {
