@@ -3,16 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/core": "^10.0.28",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "customize-cra": "^0.9.1",
-    "react": "^16.13.1",
-    "react-app-rewired": "^2.1.5",
-    "react-dev-utils": "10.0.0",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.3.0"
+    "@emotion/core": "^11.0.0",
+    "customize-cra": "^1.0.0",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.1.8",
+    "react-dev-utils": "11.0.4",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -36,8 +33,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.9.4",
-    "@emotion/babel-preset-css-prop": "^10.0.27",
-    "babel-plugin-emotion": "^10.0.33"
+    "@babel/preset-react": "^7.14.5",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@testing-library/user-event": "^13.2.1",
+    "babel-plugin-emotion": "^11.0.0"
   }
 }
