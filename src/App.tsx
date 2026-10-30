@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { cssApp, cssAppHeader } from "./style";
+import "./App.css";
 
-const App = () => {
+function App() {
   const [ayat, setAyat] = useState({});
 
   useEffect(() => {
@@ -23,19 +23,8 @@ const App = () => {
   }, []);
 
   return (
-    <div css={cssApp}>
-      <div css={cssAppHeader}>
-        <p>{ayat?.text || "Loading....."}</p>
-        <p>
-          {ayat?.surah?.englishName} {ayat?.surah ? "[" : ""}
-          {ayat?.surah?.number}
-          {ayat?.surah ? ":" : ""}
-          {ayat?.numberInSurah}
-          {ayat?.surah ? "]" : ""}
-        </p>
-      </div>
-    </div>
+    
   );
-};
+}
 
 export default App;
