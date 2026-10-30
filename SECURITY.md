@@ -2,20 +2,43 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+This is a static web app deployed from `master`. No release branches are
+maintained, so only the current `master` receives fixes.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version               | Supported          |
+| --------------------- | ------------------ |
+| master (latest)       | :white_check_mark: |
+| older commits / forks | :x:                |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Report privately through GitHub's advisory form:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+https://github.com/fandok/quran-ayat-react/security/advisories/new
+
+Please don't open a public issue for a suspected vulnerability.
+
+I aim to acknowledge within 7 days. If the report is accepted, I'll ship a fix
+and publish a GitHub security advisory crediting you unless you prefer
+otherwise. If declined, I'll explain why.
+
+## Scope
+
+In scope:
+
+- Application code in `src/`
+- Build configuration: `vite.config.ts`, `index.html`, `pnpm-lock.yaml`
+- Deployed security headers and CSP in `vercel.json`
+
+Out of scope:
+
+- The upstream API at `api.alquran.cloud` — report those to that project
+- Dependency versions already tracked by Dependabot
+  (https://github.com/fandok/quran-ayat-react/security/dependabot) — a bump PR
+  is more useful than an advisory
+
+## Notes
+
+There is no backend, no authentication and no stored user data. Everything in
+the built bundle is public by design, so "secret exposed in bundle" is not a
+valid finding.
